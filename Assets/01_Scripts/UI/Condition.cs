@@ -21,8 +21,6 @@ public class Condition : MonoBehaviour
         uiBar.fillAmount = GetPercentage();
     }
 
-
-
     public void Add(float value)
     {
         curValue = Mathf.Min(curValue + value, maxValue);

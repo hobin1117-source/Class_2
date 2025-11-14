@@ -59,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 3396768293566490551}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.76, z: 2.5}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -165,13 +165,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6284460420209506618}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.76098245, z: -0, w: 0.6487725}
-  m_LocalPosition: {x: 5.299347, y: 1.4632092, z: 3.4794617}
+  m_LocalRotation: {x: 0.06441021, y: -0, z: -0, w: 0.99792355}
+  m_LocalPosition: {x: 0, y: 1.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7344758579625452182}
-  m_LocalEulerAnglesHint: {x: 0, y: -99.102005, z: 0}
+  m_LocalEulerAnglesHint: {x: 7.386, y: 0, z: 0}
 --- !u!20 &4624890477968197492
 Camera:
   m_ObjectHideFlags: 0
@@ -424,7 +424,19 @@ MonoBehaviour:
     m_ActionId: 1a46feb7-0c58-4845-90af-568a7fb0db72
     m_ActionName: Player/Inventory[/Keyboard/tab]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6376724528845835533}
+        m_TargetAssemblyTypeName: Interaction, Assembly-CSharp
+        m_MethodName: OnInteractInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: f1da5c97-25c4-4b01-88ea-616219d6a0c0
     m_ActionName: Player/Interaction[/Keyboard/e]
   - m_PersistentCalls:
@@ -468,7 +480,7 @@ MonoBehaviour:
   jumpPower: 80
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1428
   cameraContainer: {fileID: 7344758579625452182}
   minXLook: -85
   maxXLook: 85
@@ -501,10 +513,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkRate: 0.05
-  maxCheckDistance: 0
+  maxCheckDistance: 3
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   curInteractGameObject: {fileID: 0}
   promptText: {fileID: 0}
 --- !u!1 &8608176461781074152
