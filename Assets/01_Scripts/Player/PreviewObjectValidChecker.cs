@@ -12,9 +12,11 @@ public class PreviewObjectValidChecker : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        
         // other의 레이어가 invalidLayers에 포함되어 있으면
         if (((1 << other.gameObject.layer) & invalidLayers) != 0)
         {
+            Debug.Log(other.gameObject.name + "와(과) 충돌함.");
             _collidingObjects.Add(other);
             IsValid = false;
         }

@@ -106,11 +106,8 @@ public class ObjectPlacer : MonoBehaviour
         if (_previewObject == null)
             return false;
 
-        PreviewObjectValidChecker checker = _previewObject.GetComponentInChildren<PreviewObjectValidChecker>();
-        if (checker == null)
-            return true; // 체크 스크립트 없으면 일단 가능하다고 가정
+        return _previewObject.GetComponentInChildren<PreviewObjectValidChecker>() .IsValid;
 
-        return checker.IsValid;
     }
 
     private void PlaceObject()
